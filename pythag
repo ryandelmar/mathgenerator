@@ -1,0 +1,26 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <script>
+      function showC() {
+      var a = document.getElementById('a').value;
+      var b = document.getElementById('b').value;
+      document.getElementById('c').innerHTML = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+      }
+    </script>
+      A:
+      <br>
+      <input type="number" id="a">
+      <br>
+      B:
+      <br>
+      <input type="number" id="b">
+      <br>
+      C: <p id=c></p>
+      <button onclick="showC()">
+      show me the money
+      </button>
+  </body>
+</html>
