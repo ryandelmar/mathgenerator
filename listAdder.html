@@ -1,0 +1,25 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      function addAnother() {
+      var newListItem = document.createElement('li');
+      //create a new element and store it in a variable
+      var newText = document.createTextNode('goose');
+      //create a new text node and store it in a variable
+      newListItem.appendChild(newText);
+      //find the new position where the new element. notice there are no quote.
+      var position = document.getElementsByTagName('ul')[0];
+      //insert the new element into its position.
+      position.appendChild(newListItem);
+      }
+    </script>
+     <button onclick="addAnother()">Click Here</button>
+     <ul>
+     <li>Duck</li>
+     <li>Duck</li>
+     <li>Duck</li>
+     </ul>
+  </body>
+</html>
