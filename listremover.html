@@ -1,0 +1,23 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      function removeOne() {
+      var turkey = document.getElementsByTagName('li')[1];
+      //select the remaining element.
+      var ul = turkey.parentNode;
+      //remove the element.
+      ul.removeChild(turkey);
+      }
+    </script>
+    <button onclick="removeOne()">
+      Click Here
+      </button>
+     <ul>
+       <li>Chicken</li>
+       <li>Turkey</li>
+       <li>Goose</li>
+     </ul>
+  </body>
+</html>
