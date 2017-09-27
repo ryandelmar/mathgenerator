@@ -1,0 +1,26 @@
+<html>
+  <head>
+   <script>
+    var exp = 0;
+    var i = 0;
+    
+    function runCounter() {
+      exp++;
+      i += exp;
+      document.getElementById('spinner').style.transform = "rotate("+i+"deg)";
+    }
+    </script>
+    <style>
+      #spinner {
+      width: 500px;
+      height: 500px;
+      background-size: cover;
+      background-image: url('http://www.asseenontvandbeyond.com/assets/images/fidget-spinner-black.jpg');
+      }
+    </style>
+  </head>
+  <body>
+    <div id="spinner" onmousemove="runCounter()">
+    </div>
+  </body>
+</html>
